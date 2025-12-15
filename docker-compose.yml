@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: youtube-insight-tracker
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        # Pass the API key during build time to bake it into the static assets
+        - API_KEY=${API_KEY}
+    ports:
+      - "8080:80"
+    environment:
+      - API_KEY=${API_KEY}
+    restart: unless-stopped
