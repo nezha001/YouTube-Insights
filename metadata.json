@@ -1,0 +1,5 @@
+{
+  "name": "YouTube 洞察追踪",
+  "description": "一个基于 Gemini 搜索的一体化 YouTube 频道分析仪表盘，可获取最新的订阅数、播放量指标和视频表现数据。",
+  "requestFramePermissions": []
+}
